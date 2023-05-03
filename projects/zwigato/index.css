@@ -1,0 +1,217 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Shantell Sans', cursive;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+/* Navbar : Logo and Image */
+#logo{
+    margin: 5px 16px;
+}
+
+#logo img{
+    height: 74px;
+    margin: 5px 16px;
+}
+
+/* Navbar : List Items */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(54, 2, 54);
+    position: absolute;
+    height: 82%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.8rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 6px 20px;
+    border-radius: 16px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: purple;
+    background-color: white;
+}
+
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 560px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 82%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Services Section */
+
+#services{
+    margin: 25px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 7px;
+    border-radius: 23px;
+    background-color: #fff4e7;
+}
+
+#services .box img{
+    height: 200px;
+
+}
+
+#services p{
+    font-size: 1.2rem;
+    padding: 25px;
+}
+
+/* Clients Section */
+
+#client-section{
+    height: 400px;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 150px;
+    width: 150px;
+}
+
+/* Contacts Section  */
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: url(contact.jpg);
+    opacity: 0.6;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.5rem;
+}
+
+#btn{
+    height: 30px;
+    padding: 5px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 7px;
+}
+
+/* Utility Classes */
+
+.primary{
+    font-size: 4.8rem;
+    padding: 12px;
+}
+
+.secondary{
+    font-size: 2.5rem;
+    padding: 9px;
+}
+
+.center{
+    text-align: center;
+    justify-content: center;
+}
+
+.btn{
+    border: 2px solid rgb(244, 9, 9);
+    padding: 3px;
+    margin: 20px;
+    color: rgb(152, 0, 0);
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
